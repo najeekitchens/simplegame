@@ -5,7 +5,12 @@
 (function () {
     "use strict";
 
-    document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+    document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+    setTimeout(function () {
+        if (document.location == "http://localhost:4400/index.html") {
+            document.location.replace("http://localhost:4400/index2.html");
+        }
+    }, 2000);
 
     function onDeviceReady() {
         // Handle the Cordova pause and resume events
