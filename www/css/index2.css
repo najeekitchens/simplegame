@@ -6,6 +6,17 @@
     text-align: center;
     padding: 90px 0px 0px 0px;
     margin-bottom: 50px;
+    animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .button {
@@ -21,3 +32,4 @@
     border: dashed;
     border-radius: 8px;
 }
+
